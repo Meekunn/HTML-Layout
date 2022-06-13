@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding: 1rem 2rem;
+    font-size: 15px;
+}
+header h1 {
+    background: linear-gradient(to top, #E38826 0%, #004241 90%);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+.item1, .item2, .item3 {
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem;
+    row-gap: 30px;
+    flex-basis: 32%;
+}
+.item1 {
+    background-color: #E38826;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+.item2 {
+    background-color: #006970;
+}
+.item3 {
+    background-color: #004241;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+}
+.about p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.8;
+    padding: 1rem 0 2rem;
+}
+.about h2 {
+    color: #F2F2F2;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+}
+.button {
+    margin: 1rem 0;
+}
+.button > button {
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    border: 2px solid #F2F2F2;
+}
+.button > button:hover {
+    background: transparent;
+    color: #ffffff;
+}
+.item1 button {
+    color: #E38826;
+}
+.item2 button {
+    color: #006970;
+}
+.item3 button {
+    color: #004241;
+}
+
+@media screen and (min-width: 380px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .item1 {
+        background-color: #E38826;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    .item3 {
+        background-color: #004241;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
