@@ -21,6 +21,18 @@ header h1 {
     font-size: 3rem;
     text-align: center;
 }
+header nav a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #004241;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-family: 'Lexend Deca', sans-serif;
+}
+header a:hover {
+    color: #E38826;
+}
 .container {
     display: flex;
     flex-flow: column wrap;
